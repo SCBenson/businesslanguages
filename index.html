@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    
+    <!--Structuring the sections for the front page website.-->
     <div>
+        <!--Linking all the sub-pages-->
         <a href="index.html">Home</a>        
         <a href="about.html">About us</a>
         <a href="team.html">Our team</a>
@@ -24,14 +25,38 @@
     <div></div>
     <div></div>
     <div>
+        <!--Contact detail form for users to send messages to the business.-->
         <form action="#" method="get">
+            <!--Name field with a label-->
             <div>
                 <label for="name">Name:</label>
             </div>
             <input type="text" id="name" name="name" minlength= "1" pattern="[A-Za-z]" title="Please enter in a valid name." placeholder="e.g. John Doe" required>
+            <!--E-Mail field with a label-->
+            <div>
+                <label for="email">E-Mail:</label>
+            </div>
+            <input type="email" id="email" name="email" title="please enter a valid email: you@example.com" placeholder="you@example.com" required>
+            <!--User Business URL field with a label-->
+            <div>
+                <label for="business-website">Business Website:</label>
+            </div>
+            <input type="url" id="business-website" name="business-website" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" title="please enter a valid url: https://www.yourbusiness.com" placeholder="https://www.yourbusiness.com" required>
+            <!--Subject field with a label-->
+            <div>
+                <label for="subject">Subject:</label>
+            </div>
+            <input type="text" id="subject" name="subject" placeholder="topic">
+            <!--Message field with a label-->
+            <div>
+                <label for="message-area">Your message:</label>
+            </div>
+            <textarea placeholder="Type your message here..."></textarea>
+            <!--Submit button at the end.-->
             <div>
                 <button type="submit">Submit</button>
             </div>
+            
         </form>
     </div>
 
