@@ -1,3 +1,17 @@
+body {
+    margin: 0px 107.5px 0px 107.5px; 
+}
+.content-container{
+    display: flex;
+    width: 100vw;
+    border: 1px solid red;
+}
+.video-container{
+    height:281px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
 a {
     display:flex;
     flex-direction:row;
