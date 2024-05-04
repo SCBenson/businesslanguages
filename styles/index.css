@@ -1,6 +1,38 @@
 body {
-    margin: 0px 107.5px 0px 107.5px; 
+    margin-left: 0px;
+    margin-top: 0px;
 }
+.header-content{
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    align-items: center;
+}
+
+.header-content > h1{
+    color:#FFFFFF;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/header/hero_placeholder.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(65%);
+    width: 100vw;
+    height: 500px;
+}
+h1{
+    font-size: 48px;
+    color: blue;
+}
+
+.hero-container p{
+    font-size: 29px;
+    font-weight: 400;
+}
+
 .content-container{
     display: flex;
     width: 100vw;
@@ -11,8 +43,4 @@ body {
     width: 500px;
     align-items: center;
     justify-content: center;
-}
-a {
-    display:flex;
-    flex-direction:row;
 }

@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <!--Structuring the sections for the front page website.-->
-    <div class="hero-block">
-        <div id="nav-bar">
-            <!--Linking all the sub-pages-->
-            <a href="about.html">About us</a>
-            <a href="team.html">Our team</a>
-            <a href="contact.html">Contact us</a>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" width="76px" height="72px">
+            <img src="images/logo-title.webp" width="103px" height="58px">
+            <h1>Business Languages</h1>
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Contact">Contact Us</a>
         </div>
-    </div>
+        
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <h1>English for Business Success</h1>
+            <p>join our vibrant community and begin your language learning journey.</p>
+            <hr>
+        </div>
+    </main>
+    
     <div class="content-container">
         <div class="video-container">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dNQaD4Jtkbc?si=toq249WF2htsdE0G" title="YouTube video player" frameborder="0" 
@@ -38,9 +49,7 @@
             <input type="email" id="email" name="email" title="please enter a valid email: you@example.com" placeholder="you@example.com" required>
             <!--User Business URL field with a label-->
             <div>
-                <label for="business-website">Business Website:</label>
-            </div>
-            <input type="url" id="business-website" name="business-website" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" title="please enter a valid url: https://www.yourbusiness.com" placeholder="https://www.yourbusiness.com" required>
+       <!--Structuring the sections for the front page website.-->    <input type="url" id="business-website" name="business-website" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" title="please enter a valid url: https://www.yourbusiness.com" placeholder="https://www.yourbusiness.com" required>
             <!--Subject field with a label-->
             <div>
                 <label for="subject">Subject:</label>
@@ -58,19 +67,27 @@
             
         </form>
     </div>
+    <footer>
+        <div id="footer">
+            <a href="index.html">Home</a>        
+            <a href="about.html">About us</a>
+            <a href="team.html">Our team</a>
+            <a href="online-training.html">Online trainings</a>
+            <a href="language-training.html">Language trainings</a>
+            <a href="translations.html">Translations</a>
+            <a href="business-and-guiness.html">Business & Guiness</a>
+            <a href="webseries.html">Webseries</a>
+            <a href="language-holidays.html">Language holidays</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </footer>
 
-    <div id="footer">
-        <a href="index.html">Home</a>        
-        <a href="about.html">About us</a>
-        <a href="team.html">Our team</a>
-        <a href="online-training.html">Online trainings</a>
-        <a href="language-training.html">Language trainings</a>
-        <a href="translations.html">Translations</a>
-        <a href="business-and-guiness.html">Business & Guiness</a>
-        <a href="webseries.html">Webseries</a>
-        <a href="language-holidays.html">Language holidays</a>
-        <a href="contact.html">Contact us</a>
-    </div>
+
+    
+    
+    
+
+    
 
 </body>
 </html>
