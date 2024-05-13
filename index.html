@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-logo.png">
     <link rel="stylesheet" href="./styles/index.css">
     <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -43,36 +46,64 @@
         <div class="form-container">
             <h1>Contact Us!</h1>
             <!--Contact detail form for users to send messages to the business.-->
-            <form action="#" method="get">
+            <form class="form-contact" action="#" method="get">
                 <!--Name field with a label-->
-                <div>
-                    <label for="name">Name:</label>
-                </div>
-                <input type="text" id="name" name="name" minlength= "1" title="Please enter in a valid name." placeholder="e.g. John Doe" required>
-                <!--E-Mail field with a label-->
-                <div>
-                    <label for="email">E-Mail:</label>
-                </div>
-                <input type="email" id="email" name="email" title="please enter a valid email: you@example.com" placeholder="you@example.com" required>
-                <!--User Business URL field with a label-->
-                <div>
-           <!--Structuring the sections for the front page website.-->    <input type="url" id="business-website" name="business-website" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" title="please enter a valid url: https://www.yourbusiness.com" placeholder="https://www.yourbusiness.com" required>
-                <!--Subject field with a label-->
-                <div>
-                    <label for="subject">Subject:</label>
-                </div>
-                <input type="text" id="subject" name="subject" placeholder="topic">
-                <!--Message field with a label-->
-                <div>
-                    <label for="message-area">Your message:</label>
-                </div>
-                <textarea placeholder="Type your message here..."></textarea>
-                <!--Submit button at the end.-->
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="name" name="name" minlength= "1" title="Please enter in a valid name." placeholder="e.g. John Doe" required></td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail:</td>
+                        <td><input type="email" id="email" name="email" title="please enter a valid email: you@example.com" placeholder="you@example.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>Business Website:</td>
+                        <td><input type="url" id="business-website" name="business-website" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" title="please enter a valid url: https://www.yourbusiness.com" placeholder="https://www.yourbusiness.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td><input type="text" id="subject" name="subject" placeholder="topic"></td>
+                    </tr>
+                    <tr>
+                        <td>Your Message:</td>
+                        <td><textarea placeholder="Type your message here..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Submit</button></td> 
+                    </tr>
+                </table>
                 
             </form>
+            <div class="contact-card">
+                <table>
+                    <tr>
+                        <td><h3>Visit Us</h3></td>
+                        <td><p>Adress 1</p></td>
+                        <td><p>Adress 2</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><h3>Email</h3></td>
+                        <td><p>info@placeholder.de</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><h3>Phone</h3></td>
+                        <td><p>+ XX XXXXXXXXXX</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><h3>Opening Hours</h3></td>
+                        <td><p>M-F: 9:00AM-6:00PM</p></td>
+                        <td></td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5299.62989237724!2d10.849799!3d48.38329100000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ebcdc0a913c13%3A0xc251e675dd293f06!2sDr.-D%C3%BCrrwanger-Stra%C3%9Fe%2015F%2C%2086156%20Augsburg%2C%20Germany!5e0!3m2!1sen!2sus!4v1715632174435!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </main>
     
