@@ -131,7 +131,8 @@ nav ul li {
 
 .form-container {
     width: 100vw;
-    background-color: #f4b754;
+    background-color: #155263;
+    color: white;
 }
 
 .form-container > * {
@@ -142,12 +143,16 @@ nav ul li {
 .form-container > h1 {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
+    padding-top: 25px;
     font-family: "Montserrat", serif;
 }
 
 .form-container > form {
     display: flex;
 }
+
+
 
 .contact-card {
     display: flex;
@@ -169,6 +174,7 @@ footer {
 .footer-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 500px;
     flex-direction: row;
 }
+
